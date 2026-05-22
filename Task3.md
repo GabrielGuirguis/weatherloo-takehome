@@ -18,4 +18,4 @@ Such timestamps in the data do not contain timezone offsets, as would appear at 
 
 **Zarr** is an open-source data format and library used to work with **compressed, multidimensional arrays**. It is available in Python and other languages, and provides cloud-ready **APIs** with performance-related features such as **parallel processing** and **chunking**.
 
-For this ERA5 dataset, the store on GCS is a single Zarr group: each weather variable (e.g. `10m_wind_speed`) is stored as its own chunked array, which lets tools like xarray read one timestep or region without downloading the full dataset.
+For this ERA5 dataset, the store on GCS is a single Zarr group: each weather variable (e.g. `10m_u_component_of_wind`) is stored as its own chunked array, which lets tools like xarray read one timestep or region without downloading the full dataset.
